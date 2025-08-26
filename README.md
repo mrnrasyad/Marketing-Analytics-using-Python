@@ -12,7 +12,7 @@ Below are the descriptions of the variables.
 2. xyz_campaign_id: an ID associated with each ad campaign of XYZ company.
 3. fb_campaign_id: an ID associated with how Facebook tracks each campaign.
 4. age: age of the person to whom the ad is shown.
-5. gender: gender of the person to whim the add is shown
+5. gender: gender of the person to whom the add is shown
 6. interest: a code specifying the category to which the person’s interest belongs (interests are as mentioned in the person’s Facebook public profile).
 7. Impressions: the number of times the ad was shown.
 8. Clicks: number of clicks on for that ad.
@@ -39,10 +39,24 @@ Below are the descriptions of the variables.
 #### `interest`, `Impressions`, `Clicks`, and `Spent` Vs. `Approved_Conversion`
 The correlation analysis shows that `interest` has almost no effect on conversions (0.058), while `Impressions` have a strong positive correlation (0.684), making visibility the strongest driver of approved conversions. `Clicks` (0.560) and `Spent` (0.593) both show moderate positive correlations, indicating that higher engagement and ad spend contribute to conversions, though their impact is weaker than impressions.
 
-#### Approved Conversions Vs. Age Groups per Campaign
+#### `Approved_Conversions` Vs. `Age` per `Campaign`
 Campaign 1178 achieves the highest average conversions and significantly outperforms the others, particularly in the 30–34 age group, which emerges as the most responsive segment overall. Campaigns 1178 and 936 both peak within this younger segment, while Campaign 916 performs best in the 40–44 group. These results suggest that future resources should prioritize the structure of Campaign 1178, with a strategic focus on targeting audiences aged 30–34.
 
+<p align="center">
+  <img src=image/1.png />
+</p>
 
+#### `Approved_Conversions` Vs. `Gender` per Campaign
+Campaign 1178 achieves the highest approved conversions across both genders, peaking among female customers with an average of 1.42. Campaigns 916 and 936 perform similarly with averages below 0.5, showing that campaign choice, not gender, is the dominant factor. Overall, Campaign 1178 is nearly three times more effective than the others.
 
+<p align="center">
+  <img src=image/2.png />
+</p>
 
+#### `Total_Conversions` Vs. `Approved_Conversion` per Campaign
+Campaign 1178 dominates in both total and approved conversions, driving the majority of business impact. Campaign 916 shows high approval efficiency but suffers from very low volume, while Campaign 936 sits in between with moderate conversions but relatively low efficiency.
+
+<p align="center">
+  <img src=image/3.png />
+</p>
 
