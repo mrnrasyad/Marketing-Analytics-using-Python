@@ -23,12 +23,11 @@ Below are the descriptions of the variables.
 ## Scope of The Project
 1. Data preparation
    - The `age` column is recoded into four age intervals: '30–34' as 1, '35–39' as 2, '40–44' as 3, and '45–49' as 4.
-   - `Accepted_Conversion` is recoded into a binary column (`Approved_Conversion`), where 0 = no conversion and 1 = at least one conversion.
+   - `Approved_Conversion` is recoded into a binary column (`Accepted_Conversion`), where 0 = no conversion and 1 = at least one conversion.
 2. Exploratory data analysis (EDA)
-   - Using correlation test to see how the `interest`, `Impressions`, `Clicks` , and `Spent` columns correlated with `Accepted_Conversion`.
-   - Using bar plot to see how effective each campaign (`ad_id`, `xyz_campaign_id`, and `fb_campaign_id`) by  
-
-Model training
+   - Using correlation test to see how the `interest`, `Impressions`, `Clicks` , and `Spent` columns correlated with `Approved_Conversion`.
+   - Using bar plot to see how `age`, `gender`, and `Total conversion` related to  `Approved_Conversion` for  each campaign (`ad_id`, `xyz_campaign_id`, and `fb_campaign_id`).
+3. Model training
 
 Uses RandomForestClassifier (and possibly other models).
 
