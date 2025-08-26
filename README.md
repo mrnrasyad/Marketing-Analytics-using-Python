@@ -68,5 +68,10 @@ The Logistic Regression model achieved an ROC AUC of **0.668**, while the Random
   <img src=image/4.png />
 </p>
 
-Engagement metrics like Total Conversions, Impressions, and Interest have the biggest impact, while demographics (like gender and age) play a smaller role. In short, customer actions matter more than who they are.
+Other than `Total_Conversions`, engagement metrics like `Impressions`, `interest`, and `Spent` have the biggest impact, while demographics (such as gender and age) play a smaller role. In short, customer actions matter more than who they are. These results are in line with the correlation analysis conducted earlier.
+
+## Conclusions 
+This project demonstrates that **campaign design and customer engagement metrics are far more influential than demographics in driving conversions**. Campaign 1178 consistently delivers the highest impact, especially among the **30–34 age group**, making it the most valuable audience segment to target. Gender does not significantly affect outcomes, as performance is determined primarily by the campaign itself. Correlation and feature-importance analyses confirm that `Total_Conversions`, `Impressions`, and `interest`. are key predictors, while demographics (such as gender and age) play a smaller role.
+
+From a modeling perspective, Logistic Regression achieved a baseline ROC AUC of 0.668, while Random Forest improved to 0.727, showing that machine learning can enhance predictive performance with proper stability checks. Overall, the findings suggest that **future marketing strategies should prioritize Campaign 1178’s structure, optimize for visibility and engagement, and allocate resources toward the younger 30–34 segment to maximize returns.
 
