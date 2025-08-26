@@ -25,20 +25,23 @@ Below are the descriptions of the variables.
    - The `age` column is recoded into four age intervals: '30–34' as 1, '35–39' as 2, '40–44' as 3, and '45–49' as 4.
    - `Approved_Conversion` is recoded into a binary column (`Accepted_Conversion`), where 0 = no conversion and 1 = at least one conversion.
 2. Exploratory data analysis (EDA)
-   - Using correlation test to see how the `interest`, `Impressions`, `Clicks` , and `Spent` columns correlated with `Approved_Conversion`.
-   - Using bar plot to see how `age`, `gender`, and `Total conversion` related to  `Approved_Conversion` for  each campaign (`ad_id`, `xyz_campaign_id`, and `fb_campaign_id`).
+   - A correlation test is conducted to examine the relationships between `interest`, `Impressions`, `Clicks`, and `Spent` with `Approved_Conversion`.
+   - Bar plots are used to analyze the relationships of `age`, `gender`, and `Total conversion` with `Approved_Conversion` across campaigns (`ad_id`, `xyz_campaign_id`, and `fb_campaign_id`).
 3. Model training
+   - A new `df` is created to prevent data leakage. The data is split into training (60%), validation (20%), and testing (20%) sets, with the same feature engineering applied to each.
+   - The base model uses Logistic Regression and Random Forest, evaluated with ROC AUC.
+4. Performance stability check
+   - Retrains on the full training data and checks how performance changes, to ensure the model generalizes.
+5. Model interpretation
+   - Uses SHAP values or feature importance to see which features most influence conversion.
+  
+## Results
+#### `interest`, `Impressions`, `Clicks`, and `Spent` Vs. `Approved_Conversion`
+The correlation analysis shows that `interest` has almost no effect on conversions (0.058), while `Impressions` have a strong positive correlation (0.684), making visibility the strongest driver of approved conversions. `Clicks` (0.560) and `Spent` (0.593) both show moderate positive correlations, indicating that higher engagement and ad spend contribute to conversions, though their impact is weaker than impressions.
 
-Uses RandomForestClassifier (and possibly other models).
 
-Splits into X_train, X_test, y_train, y_test.
 
-Evaluates using ROC AUC (a good metric for imbalanced classification like marketing conversion).
 
-Performance stability check
 
-Retrains on the full training data and checks how performance changes, to ensure the model generalizes.
 
-Model interpretation
 
-Uses SHAP values or feature importance to see which features most influence conversion.
