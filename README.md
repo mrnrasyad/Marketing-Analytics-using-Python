@@ -39,7 +39,8 @@ Below are the descriptions of the variables.
 #### `interest`, `Impressions`, `Clicks`, and `Spent` Vs. `Approved_Conversion`
 The correlation analysis shows that `interest` has almost no effect on conversions (0.058), while `Impressions` have a strong positive correlation (0.684), making visibility the strongest driver of approved conversions. `Clicks` (0.560) and `Spent` (0.593) both show moderate positive correlations, indicating that higher engagement and ad spend contribute to conversions, though their impact is weaker than impressions.
 
-
+#### Approved Conversions Vs. Age Groups per Campaign
+Campaign 1178 achieves the highest average conversions and significantly outperforms the others, particularly in the 30–34 age group, which emerges as the most responsive segment overall. Campaigns 1178 and 936 both peak within this younger segment, while Campaign 916 performs best in the 40–44 group. These results suggest that future resources should prioritize the structure of Campaign 1178, with a strategic focus on targeting audiences aged 30–34.
 
 
 
