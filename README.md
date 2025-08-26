@@ -60,3 +60,13 @@ Campaign 1178 dominates in both total and approved conversions, driving the majo
   <img src=image/3.png />
 </p>
 
+#### Top 10 Features
+
+The Logistic Regression model achieved an ROC AUC of **0.668**, while the Random Forest model obtained **0.629**, indicating weaker performance. However, a performance stability check using `RandomForestClassifier` produced an improved ROC AUC of **0.727**. This SHAP summary plot shows the top features that influence whether a customer buys after seeing an ad.
+
+<p align="center">
+  <img src=image/4.png />
+</p>
+
+Engagement metrics like Total Conversions, Impressions, and Interest have the biggest impact, while demographics (like gender and age) play a smaller role. In short, customer actions matter more than who they are.
+
