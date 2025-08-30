@@ -1,4 +1,4 @@
-# Marketing Analysis Using Python: A Data Analytics Project
+# Marketing Analysis using Python: A Data Analytics Project
 
 ## Brief Description about this Project
 The goal of this project is to analyze which customer features (like demographics and past interactions) most influence whether a customer buys a product after seeing an ad.
