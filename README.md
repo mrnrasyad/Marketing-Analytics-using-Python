@@ -43,21 +43,21 @@ The correlation analysis shows that `interest` has almost no effect on conversio
 Campaign 1178 achieves the highest average conversions and significantly outperforms the others, particularly in the 30–34 age group, which emerges as the most responsive segment overall. Campaigns 1178 and 936 both peak within this younger segment, while Campaign 916 performs best in the 40–44 group. These results suggest that future resources should prioritize the structure of Campaign 1178, with a strategic focus on targeting audiences aged 30–34.
 
 <p align="center">
-  <img src=image/1.png />
+  <kbd> <img src=image/1.png> </kbd>
 </p>
 
 #### `Approved_Conversions` Vs. `Gender` per Campaign
 Campaign 1178 achieves the highest approved conversions across both genders, peaking among female customers with an average of 1.42. Campaigns 916 and 936 perform similarly with averages below 0.5, showing that campaign choice, not gender, is the dominant factor. Overall, Campaign 1178 is nearly three times more effective than the others.
 
 <p align="center">
-  <img src=image/2.png />
+  <kbd> <img src=image/2.png> </kbd>
 </p>
 
 #### `Total_Conversions` Vs. `Approved_Conversion` per Campaign
 Campaign 1178 dominates in both total and approved conversions, driving the majority of business impact. Campaign 916 shows high approval efficiency but suffers from very low volume, while Campaign 936 sits in between with moderate conversions but relatively low efficiency.
 
 <p align="center">
-  <img src=image/3.png />
+  <kbd> <img src=image/3.png> </kbd>
 </p>
 
 #### Top 10 Features
@@ -65,7 +65,7 @@ Campaign 1178 dominates in both total and approved conversions, driving the majo
 The Logistic Regression model achieved an ROC AUC of **0.668**, while the Random Forest model obtained **0.629**, indicating weaker performance. However, a performance stability check using `RandomForestClassifier` produced an improved ROC AUC of **0.727**. This SHAP summary plot shows the top features that influence whether a customer buys after seeing an ad.
 
 <p align="center">
-  <img src=image/4.png />
+  <kbd> <img src=image/4.png> </kbd>
 </p>
 
 Other than `Total_Conversions`, engagement metrics like `Impressions`, `interest`, and `Spent` have the biggest impact, while demographics (such as gender and age) play a smaller role. In short, customer actions matter more than who they are. These results are in line with the correlation analysis conducted earlier.
